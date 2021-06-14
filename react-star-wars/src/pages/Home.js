@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import '../styles/Home.css'
 
 const Home = (props)=>{
+
+    console.log(props)
     return(
         <div>
             <nav>
@@ -19,6 +21,7 @@ const Home = (props)=>{
                          <Link to={location} key={starship.name}>
                             <div className='card'>
                                 <h1 className='link'>{starship.name}</h1>
+                                <p>Units: {starship.cost_in_credits}</p>
                             </div>
                         </Link>
                      )

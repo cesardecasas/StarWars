@@ -5,7 +5,7 @@ import '../styles/Home.css'
 const Starship=(props)=>{
 
     let starship = props.location.state
-
+    console.log(props.location.state)
     return(
         <div>
             <nav>
